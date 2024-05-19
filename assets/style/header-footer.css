@@ -1,0 +1,401 @@
+/* ! ------------------------------------------------------------------------ */
+/* ! Header                                                                   */
+/* ! ------------------------------------------------------------------------ */
+
+header {
+  background-color: #fff;
+}
+
+.main-nav {
+  align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 0;
+}
+
+.main-nav h1 {
+  color: #000;
+}
+
+.desktop-pages a {
+  color: #000;
+  padding: 1rem 2rem;
+}
+
+.desktop-pages a:last-child {
+  background-color: #000;
+  border: 0.1rem solid transparent;
+  border-radius: 0.5rem;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.desktop-pages a:last-child:hover {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  border: #000 0.1rem solid;
+  color: #000;
+}
+
+.main-nav .fa-bars {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .desktop-pages {
+    display: none;
+  }
+
+  .main-nav .fa-bars {
+    display: block;
+    font-size: 2.5rem;
+  }
+}
+
+/* ! ------------------------------------------------------------------------ */
+/* ! Footer                                                                   */
+/* ! ------------------------------------------------------------------------ */
+
+footer {
+  padding: 8rem 0;
+}
+
+footer,
+footer a {
+  background-color: #1b1b1b;
+  color: #fff;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-links,
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1.5rem;
+}
+
+.newsletter input {
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.join-btn {
+  align-self: flex-end;
+  padding: 1rem 2rem;
+  background-color: #000;
+  border: 0.1rem solid transparent;
+  border-radius: 0.5rem;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.join-btn:hover {
+  background-color: #fff;
+  border: 0.1rem solid #000;
+  border-radius: 0.5rem;
+  color: #000;
+  transition: all 0.3s ease-in-out;
+}
+
+.authors {
+  padding-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+@media (max-width: 768px) {
+  .row div {
+    width: 100%;
+    text-align: center;
+  }
+
+  .newsletter {
+    align-items: center;
+  }
+
+  .join-btn {
+    align-self: center;
+  }
+
+  .newsletter input {
+    width: 80%;
+  }
+}
+
+/* ! ------------------------------------------------------------------------ */
+/* ! Login Dialog                                                             */
+/* ! ------------------------------------------------------------------------ */
+
+.overlay,
+.modal {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+}
+
+.overlay {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.modal {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  translate: 0 -15px;
+  transition: all 0.5s ease;
+  z-index: 2;
+  width: 35rem;
+}
+
+.sign-up-modal-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.valid {
+  background-image: url(../media/icons/check-mark.png);
+  background-position-x: right 1rem;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: 10%;
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+  translate: 0 0;
+}
+
+.sign-up-google {
+  background-image: url(../media/icons/google.jpg);
+  background-size: 8%;
+  background-repeat: no-repeat;
+  background-position-x: 4.5rem;
+  background-position-y: center;
+}
+
+.sign-up-apple {
+  background-image: url(../media/icons/apple.png);
+  background-size: 9%;
+  background-repeat: no-repeat;
+  background-position-x: 4.5rem;
+  background-position-y: center;
+}
+
+.sign-up-google,
+.sign-up-apple,
+.sign-up-email-password input {
+  border: 0.1rem solid #e6eaec;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  width: 100%;
+  color: #000;
+}
+
+.sign-up-email-password {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+  gap: 0.5rem;
+}
+
+.have-account {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.have-account p {
+  font-size: 1.1rem;
+}
+
+#sign-up-modal-btn {
+  background-color: #000;
+  border: 0.1rem solid transparent;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.tc-link,
+.login-link {
+  text-decoration: underline #d4d4d4;
+  color: #1b1b1b;
+}
+
+@media (max-width: 668px) {
+  .row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  .authors {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+}
+
+/* ! ------------------------------------------------------------------------ */
+/* ! Login Dialog                                                             */
+/* ! ------------------------------------------------------------------------ */
+
+.overlay,
+.modal {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+}
+
+.overlay {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.modal {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  translate: 0 -15px;
+  transition: all 0.5s ease;
+  z-index: 2;
+  width: 35rem;
+}
+
+.sign-up-modal-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.valid {
+  background-image: url(../media/icons/check-mark.png);
+  background-position-x: 27rem;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: 10%;
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+  translate: 0 0;
+}
+
+.sign-up-google,
+.sign-up-apple,
+.sign-up-email-password input {
+  border: 0.1rem solid #e6eaec;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+.sign-up-email-password {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+  gap: 0.5rem;
+}
+
+.have-account {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.have-account p {
+  font-size: 1.1rem;
+}
+
+#sign-up-modal-btn {
+  background-color: #000;
+  border: 0.1rem solid transparent;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.tc-link,
+.login-link {
+  text-decoration: underline #d4d4d4;
+  color: #1b1b1b;
+}
+
+@media (max-width: 668px) {
+  .row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  .authors {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+}

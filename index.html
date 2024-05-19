@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Luxury Vehicles</title>
+    <link rel="icon" href="https://github.com/marcelolop/premium-luxury-vehicles/blob/main/assets/media/img/favicon.jpg?raw=true" type="image/jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/style/reset.css">
+    <link rel="stylesheet" href="./assets/style/index.css">
+    <script src="./assets/script/index.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="container">
+            <nav class="main-nav">
+                <div>
+                    <a href="./index.html">
+                        <h1>LUXURY CARS</h1>
+                    </a>
+                </div>
+                <div>
+                    <div>
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+                <div class="desktop-pages">
+                    <a href="#">Inventory</a>
+                    <a href="#">Sell</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                    <a id="sign-up" href="#">Sign Up</a>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+
+        <div class="overlay"></div>
+
+        <!-- Modal -->
+        <div class="container">
+            <div class="modal">
+                <form class="sign-up-modal-container">
+                    <a class="sign-up-google" href="#">Sign up with Google</a>
+                    <a class="sign-up-apple" href="#">Sign up with Apple</a>
+                    <p>or</p>
+                    <div class="sign-up-email-password">
+                        <label for="email">Email*</label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                        <label for="password">Password*</label>
+                        <input type="password" name="password" id="password" cols="30" rows="5"
+                            placeholder="Create a password" required></input>
+                    </div>
+                    <div class="terms-checkbox">
+                        <input type="checkbox" name="tc" id="tc">
+                        <label for="tc">I agree to the <a class="tc-link" href="#">terms and conditions</a></label>
+                    </div>
+                    <div class="have-account">
+                        <p>Already have an account? <a class="login-link" href="#">Login</a></p>
+                        <input id="sign-up-modal-btn" type="button" value="Sign Up" alt="Sign up button">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Section Hero Banner -->
+        <section class="st-hero-banner">
+            <div class="container">
+                <div class="st-flex-container-hero-banner">
+                    <div class="st-hero-banner-text-container">
+                        <h2>Premium Luxury Cars</h2>
+                        <p>Explore over 7,000+ brands of vehicles.</p>
+                        <a class="app-btn-global-type-x2" href="#">Know More</a>
+                    </div>
+                    <div class="st-hero-banner-img-container">
+                        <img src="./assets/media/img/hero-car.png" alt="Car Hero">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Discount Offers -->
+        <section class="discount-offer">
+            <div class="container">
+                <div class="discount-offer-flex-container">
+                    <div class="discount-offer-text-part">
+                        <p>
+                        <h2 class="discount-offer-h2-for-text">Awesome car for awesome price</h2>
+                        <p class="discount-offer-text">
+                            A benchmark in terms of comfort, space and versatility,
+                            Citroën C5 Aircross SUV has been given a makeover to
+                            express greater strength and refinement. Available in
+                            plug-in hybrid and petrol versions.
+                        </p>
+                        </p>
+                        <div class="discount-offer-discover-more-button-div">
+                            <a scr="#" class="app-btn-global-type-x2">Discover More</a>
+                        </div>
+                        <table class="discount-offer-car-stats">
+                            <thead>
+                                <th>Leading Range</th>
+                                <th>Fuel</th>
+                                <th>Price</th>
+                            </thead>
+                            <tbody>
+                                <td>219 km/h</td>
+                                <td>Electric</td>
+                                <td>$50000</td>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="discount-offer-car-image-div">
+                        <img src="./assets/media/img/2024-mazda-cx-5-2.5-s-carbon-edition-package.png"
+                            class="discount-offer-car-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Car Offers -->
+        <div class="container">
+            <section class="car-offers">
+                <div class="car-offers-title">
+                    <h2>MAKE OFFERS. WE'LL HANDLE THE REST</h2>
+                </div>
+                <div class="car-list">
+                    <!-- Car Item -->
+                    <a href="./details.html" class="car-item">
+                        <img src="./assets/media/img/futuristic concept car.png" alt="Traction 7A">
+                        <h3>Azura Grand Sport</h3>
+                        <div class="card-details">
+                            <div class="card-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p class="price">$2,940,000</p>
+                        </div>
+                        <p>The Azura concept is a recent addition to the expanding front-wheel drive market in the future.
+                        </p>
+                        <div class="card-info">
+                            <div class="card-info-item">
+                                <span class="info-title">Year of Production</span>
+                                <span class="info">2022</span>
+                            </div>
+                            <div class="card-info-item">
+                                <span class="info-title">Fuel</span>
+                                <span class="info">Gas</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="car-item">
+                        <img src="./assets/media/img/Traction 7A,.png" alt="Traction 7A">
+                        <h3>Traction 7A</h3>
+                        <div class="card-details">
+                            <div class="card-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p class="price">$1,340,000</p>
+                        </div>
+                        <p>The Traction 7A, a vintage gem from 1934, is a testament to retro innovative spirit. 
+                        </p>
+                        <div class="card-info">
+                            <div class="card-info-item">
+                                <span class="info-title">Year of Production</span>
+                                <span class="info">1934</span>
+                            </div>
+                            <div class="card-info-item">
+                                <span class="info-title">Fuel</span>
+                                <span class="info">Gas</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="car-item">
+                        <img src="./assets/media/img/Ami One Concept car,.png" alt="Traction 7A">
+                        <h3>Ami One Concept </h3>
+                        <div class="card-details">
+                            <div class="card-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p class="price">$1,340,000</p>
+                        </div>
+                        <p>The Ami One concept is a novel entry in the rapidly expanding electric vehicle of the future.
+                        </p>
+                        <div class="card-info">
+                            <div class="card-info-item">
+                                <span class="info-title">Year of Production</span>
+                                <span class="info">2019</span>
+                            </div>
+                            <div class="card-info-item">
+                                <span class="info-title">Fuel</span>
+                                <span class="info">Charger</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="car-item">
+                        <img src="./assets/media/img/C-Metisse car,.png" alt="C-Metisse">
+                        <h3>C-Metisse</h3>
+                        <div class="card-details">
+                            <div class="card-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p class="price">$3,160,000</p>
+                        </div>
+                        <p>The C-Métisse, a classic from 1958, is a unique presence on the antique vehicle market.
+                        </p>
+                        <div class="card-info">
+                            <div class="card-info-item">
+                                <span class="info-title">Year of Production</span>
+                                <span class="info">1958</span>
+                            </div>
+                            <div class="card-info-item">
+                                <span class="info-title">Fuel</span>
+                                <span class="info">Gas</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </div>
+
+        <!-- Section Sports Car -->
+        <section class="sports-car">
+            <div class="container">
+                <div class="sports-car-flex-container">
+                    <div class="sports-car-image-div">
+                        <img src="./assets/media/img/ferrari_PNG10630.png" class="sports-car-image">
+                    </div>
+                    <div class="sports-car-text-part">
+                        <h2 class="sports-car-h2-for-text">Become the speed</h2>
+                        <p class="sports-car-text">
+                            The Aston Martin Vantage is an NFL fullback dressed in a
+                            tightly tailored tuxedo, which makes it the perfect car in
+                            which to play the role of your favorite secret agent man.
+                            The Aston Martin Vantage is an NFL fullback dressed in a
+                            tightly tailored tuxedo.
+                        </p>
+                        <div class="sports-car-discover-more-button-div">
+                            <a scr="#" class="app-btn-global-type-x2">Discover More</a>
+                        </div>
+                        <table class="sports-car-stats">
+                            <thead>
+                                <th>Leading Range</th>
+                                <th>Fuel</th>
+                                <th>Price</th>
+                            </thead>
+                            <tbody>
+                                <td>299 km/h</td>
+                                <td>Electric</td>
+                                <td>$350000</td>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Brands -->
+        <section class="brands">
+            <div class="container">
+                <div class="brands-flex-container">
+                    <div>
+                        <img src="./assets/media/img/business-woman.png" alt="">
+                    </div>
+                    <div class="center-div">
+                        <h2>Luxury Car of the Woodlands</h2>
+                        <p>You can rely on us to provide you with the customer service you're looking for!</p>
+                        <a class="app-btn-global-type-x2" href="#">Discover More</a>
+                    </div>
+                    <div>
+                        <img src="./assets/media/img/business-man.png" alt="">
+                    </div>
+                </div>
+                <div class="lineup">
+                    <h2>An Exciting Lineup of Top Brands In Our Showrooms!</h2>
+                    <div class="brands-logos">
+                        <a>Mercedes</a>
+                        <a>BMW</a>
+                        <a>Audi</a>
+                        <a>Volvo</a>
+                        <a>Land Rover</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="container">
+            <div class="row">
+                <div>
+                    <h3>Join our Newsletter</h3>
+                    <div class="newsletter">
+                        <p>Receive our latest updates.</p>
+                        <input type="text">
+                        <a class="join-btn" href="#">Join</a>
+                    </div>
+                </div>
+                <div>
+                    <h3>Showroom</h3>
+                    <div class="footer-links">
+                        <a href="">Cars for Sale</a>
+                        <a href="">Previously Sold</a>
+                        <a href="">Sell Us Your Car</a>
+                    </div>
+                </div>
+                <div>
+                    <h3>About</h3>
+                    <div class="footer-links">
+                        <a href="#">Our Story</a>
+                        <a href="#">Why Luxy Cars FAQ</a>
+                        <a href="#">Testimonial</a>
+                    </div>
+                </div>
+                <div>
+                    <h3>Contact</h3>
+                    <div class="footer-links">
+                        <a href="#">How to Find Us</a>
+                        <a href="#">T: +1 (431) 123-1234</a>
+                        <a href="mailto:sales@luxurycars.com">E: sales@luxurycars.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="authors">
+                    <p>&copy;  2024 Luxury Vehicles <a href="https://www.facebook.com/CAUFSK4701111?mibextid=JRoKGi" target="_blank">
+                         Designed by Shabaz Mahamood</a></p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
